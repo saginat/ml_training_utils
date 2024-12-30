@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_training_utils"
+version = "0.1.0"
+description = "Comprehensive utilities for ML experiment tracking and management"
+authors = [{name = "Sagi Nathan", email = ""}]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.8.0",
+    "numpy>=1.19.0",
+    "pandas>=1.2.0",
+    "matplotlib>=3.3.0",
+    "plotly>=5.0.0",
+    "tqdm>=4.45.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=3.9",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']

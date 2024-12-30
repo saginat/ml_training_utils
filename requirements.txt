@@ -1,0 +1,10 @@
+torch>=1.8.0
+numpy>=1.19.0
+pandas>=1.2.0
+matplotlib>=3.3.0
+plotly>=5.0.0
+tqdm>=4.45.0
+pytest>=6.0
+black>=22.0
+isort>=5.0
+flake8>=3.9
